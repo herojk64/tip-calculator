@@ -1,0 +1,22 @@
+.App{
+    @apply bg-neutral-light-grayish-cyan min-h-screen flex flex-col justify-center items-center py-8 px-3 gap-4;
+
+    main{
+        @apply flex justify-center items-center;
+        .card__component{
+            @apply bg-white grid lg:grid-cols-2 grid-rows-2 lg:grid-rows-1 gap-5 p-6 rounded-xl max-w-[50rem];
+        }
+
+        section:nth-child(2){
+            @apply bg-neutral-very-dark-cyan rounded-lg p-6;
+        }
+    }
+
+    .reset-btn{
+        @apply w-full text-xl text-neutral-very-dark-cyan bg-primary-cyan hover:bg-neutral-light-grayish-cyan rounded font-semibold py-2 px-3 mt-auto block;
+        
+        &:disabled{
+            @apply bg-neutral-dark-grayish-cyan
+        }
+    }
+}

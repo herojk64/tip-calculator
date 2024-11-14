@@ -1,0 +1,21 @@
+.form-control{
+    label{
+        @apply block mb-2;
+    }
+
+    span[data-icon="true"]{
+        @apply relative;
+        img{
+            @apply absolute top-0 left-0 translate-x-3 translate-y-1;
+        }
+    }
+
+    input{
+        @apply bg-neutral-very-light-grayish-cyan px-3 py-2 text-right
+         hover:outline-primary-cyan outline-primary-cyan border border-opacity-25 rounded-md transition ease-in-out delay-75 border-primary-cyan hover:border-opacity-100
+            text-neutral-very-dark-cyan font-bold
+            w-full
+            [appearance:textfield] [&::-webkit-outer-spin-button]:appearance-none [&::-webkit-inner-spin-button]:appearance-none
+         ;
+    }
+}

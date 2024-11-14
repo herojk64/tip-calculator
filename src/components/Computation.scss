@@ -1,0 +1,17 @@
+.tip__total__wrapper{
+    @apply  font-semibold flex justify-between items-center mb-12;
+
+    span{
+        @apply text-4xl text-primary-cyan;
+    }
+
+    header{
+        @apply text-xl text-neutral-light-grayish-cyan mb-2;
+    }
+
+    p{
+        @apply text-sm opacity-50 text-neutral-light-grayish-cyan;
+    }
+
+    
+}
